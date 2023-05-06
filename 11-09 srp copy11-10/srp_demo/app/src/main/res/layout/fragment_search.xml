@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".search"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+<!--        <Spinner-->
+<!--            android:layout_width="140dp"-->
+<!--            android:layout_height="34dp"-->
+<!--            android:id="@+id/spinner1"-->
+<!--            android:layout_marginTop="60dp"-->
+<!--            android:layout_marginRight="7dp"-->
+<!--            android:layout_marginLeft="10dp"/>-->
+
+<!--        <Spinner-->
+<!--            android:layout_width="144dp"-->
+<!--            android:layout_height="33dp"-->
+<!--            android:id="@+id/spinner2"-->
+<!--            android:layout_marginTop="60dp"-->
+<!--            android:layout_marginRight="7dp"-->
+<!--            android:layout_marginLeft="10dp"/>-->
+
+        <AutoCompleteTextView
+            android:id="@+id/locAtv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:completionThreshold="1"
+            android:hint="Select address"
+            android:backgroundTint="@color/white"
+            android:background="@color/white"
+            android:padding="15dp"
+            android:layout_marginBottom="11dp"
+            android:layout_weight="0.45"
+
+            />
+
+        <AutoCompleteTextView
+            android:id="@+id/catAtv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:completionThreshold="1"
+            android:hint="Select category"
+            android:backgroundTint="@color/white"
+            android:background="@color/white"
+            android:padding="15dp"
+            android:layout_marginBottom="11dp"
+            android:layout_weight="0.45"
+
+            />
+
+        <ImageButton
+            android:id="@+id/imbtn"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:src="@drawable/search_icon"
+            android:background="@color/white"
+            android:layout_marginTop="11dp"
+            android:padding="15dp"
+            android:layout_weight="0.1"/>
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerContact_s2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>
